@@ -71,15 +71,12 @@ speedScale.grid(row=0, column=1, padx=5, pady=5)
 
 Button(UI_frame, text="Start", command=StartAlgorithm, bg='red').grid(row=0, column=3, padx=5, pady=5)
 
-# Label(UI_frame, text="Size", bg='grey').grid(row=1, column=0, padx=5, pady=5, sticky=W)
 sizeEntry = Scale(UI_frame, from_=3, to=25, resolution=1, orient=HORIZONTAL, label="Data Size")
 sizeEntry.grid(row=1, column=0, padx=5, pady=5)
 
-# Label(UI_frame, text="Min Value", bg='grey').grid(row=1, column=2, padx=5, pady=5, sticky=W)
 minEntry = Scale(UI_frame, from_=0, to=10, resolution=1, orient=HORIZONTAL, label="Min Value")
 minEntry.grid(row=1, column=1, padx=5, pady=5)
 
-# Label(UI_frame, text="Max Value", bg='grey').grid(row=1, column=4, padx=5, pady=5, sticky=W)
 maxEntry = Scale(UI_frame, from_=10, to=100, resolution=1, orient=HORIZONTAL, label="Max Value")
 maxEntry.grid(row=1, column=2, padx=5, pady=5)
 
